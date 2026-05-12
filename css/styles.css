@@ -1,5 +1,8 @@
 body {
   font-size: 14px;
+  font-family: "Manrope", sans-serif;
+}
+h1, h2, h3 {
   font-family: "Comfortaa", sans-serif;
 }
 .logo {
@@ -128,7 +131,7 @@ input[type="submit"] {
 	background-color: #BC6C25;
   color: white;
 	border-radius: 8px;
-	border: 1px solid #bbb;
+	border: 1px solid #BC6C25;
 	cursor: pointer;
   font-size: 14px;
   font-family: "Comfortaa", sans-serif;
