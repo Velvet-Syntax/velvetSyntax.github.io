@@ -15,6 +15,11 @@ h1, h2, h3 {
       border-color: #BC6C25;
       color: white;
  }
+ .btn-primary:hover {
+  background-color: #9c581d; /* Slightly darker shade */
+  border-color: #9c581d;
+  color: #283618;
+}
  .my-custom-navbar {
     background-color: #FFF7E0
 }
@@ -112,7 +117,7 @@ input[type="email"],input[type="text"],input[type="tel"],textarea, select {
     padding:6px 10px;
     background-color:white;
     border:1px solid white;
-    border-radius:4px;
+    border-radius:8px;
     box-shadow:none;
     box-sizing:border-box;
 }
@@ -123,8 +128,8 @@ textarea {
 }
 input[type="submit"] {
 	padding: 0 30px;
-	font-size: 11px;
-	font-weight: 600;
+	/*font-size: 14px;
+	font-weight: 600;*/
 	line-height: 38px;
 	letter-spacing: .1rem;
 	text-transform: uppercase;
@@ -132,14 +137,13 @@ input[type="submit"] {
   color: white;
 	border-radius: 8px;
 	border: 1px solid #BC6C25;
-	cursor: pointer;
-  font-size: 14px;
-  font-family: "Comfortaa", sans-serif;
+	cursor: pointer; 
  }
 input[type="submit"]:hover, input[type="submit"]:focus {
-    color:#333;
-    border-color:#888;
-    outline:0;
+  background-color: #BC6C25;
+  color:#283618;
+  background-color: #9c581d; /* Slightly darker shade */
+  border-color: #9c581d;
 }
 input[type="text"]:required, input[type="tel"]:required, input[type="email"]:required {
     border-color:red;
