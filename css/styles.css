@@ -16,7 +16,7 @@
   /* Variable Font Weights */
   --mm-weight-bold: 700;
   --mm-weight-semibold: 600;
-  --mm-weight-regular: 400;
+  --mm-weight-regular: 300;
 
   /* Variable Type Scale */
   --mm-text-hero: clamp(2.5rem, 2rem + 2vw, 3.813rem);
@@ -25,6 +25,7 @@
   --mm-text-h3: clamp(1.375rem, 1.2rem + 0.7vw, 1.938rem);
   --mm-text-h4: clamp(1.125rem, 1rem + 0.4vw, 1.25rem);
   --mm-text-body: 1rem;
+  --bs-nav-link-font-size: 0.75rem;
 
   /* Variable Line Heights */
   --mm-line-tight: 1.1;
@@ -32,14 +33,12 @@
   --mm-line-loose: 1.5;
 }
 
+
 body {
   background-color: color-mix(in srgb, var(--mm-color-baseCream) 70%, transparent);
-  font-family: var(--mm-font-main);
-  font-size: var(--mm-text-body);
-  font-weight: var(--mm-weight-regular);
-  line-height: var(--mm-line-loose);
 }
 
+/* Text Styles */
 .text-dark {
   color: var(--mm-color-primaryDark);
 }
@@ -88,41 +87,129 @@ p {
   font-size: var(--mm-text-body);
   font-weight: var(--mm-weight-regular);
   line-height: var(--mm-line-loose);
+  letter-spacing: 0.05rem;
 }
 
-
+/* Navigation Bar Styles */
 nav.bg-body-tertiary  {
+  font-weight: var(--mm-weight-semibold);
   background-color: var(--mm-color-baseCream) !important;
 }
 
-.home-hero {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-    url('/images/home/Home-Hero-BakingHands.png');
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  display: flex;
+nav a {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: var(--mm-font-main);
 }
 
-.home-hero-content {
+nav {
   position: relative;
+  z-index: 999;
+}
+
+/* Button Styles */
+.btn {
+  font-family: var(--mm-font-main);
+  text-transform: uppercase;
+  font-weight: var(--mm-weight-bold);
+  padding: .7rem 1rem;
+  font-size: .75rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: var(--mm-color-baseCream);
+  color: var(--mm-color-primaryDark);
+}
+
+/* Home Page Styles */
+/* Home - Video Header Styles */
+.home-hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 55vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: visible;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 17, 1, 0.559);
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('/assets/home/Home-Hero-BakingHands.png') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+.home-hero {
+  position: relative;
+  inset: 0;
   top: 100px;
-  color: var(--mm-color-baseWhite);
+  color: var(--mm-color-baseCream);
+  overflow: visible;
 }
 
 .home-hero-shape {
   display: block;
-  width: 600px;
-  z-index: 1;
+  position: absolute;
+  left: 12vw;
+  top: 4vh;
+  width: clamp(600px, 60vw, 800px);
+  z-index: 3;
 }
 
 .home-hero-text {
   position: absolute;
+  color: var(--mm-color-baseWhite);
   text-align: center;
-  width: 100%;
-  top: 40%;
+  width: clamp(250px, 40vw, 800px);
+  left: 15vw;
+  top: 8vh;
+  z-index: 4;
+}
+
+#home-cutout-woman-carrying-bread {
+  position: absolute;
+  bottom: -48vh;
+  right: 12vw;
+  z-index: 3;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
+  transform: translate(100%, -40%); */
 }
