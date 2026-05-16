@@ -82,6 +82,15 @@ h4 {
   line-height: var(--mm-line-reg);
 }
 
+h6 {
+  font-family: var(--mm-font-main);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--mm-weight-semibold);
+  line-height: var(--mm-line-reg);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
 p {
   font-family: var(--mm-font-main);
   font-size: var(--mm-text-body);
@@ -129,7 +138,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 570px;
 }
 
 .hero-video video {
@@ -145,21 +154,21 @@ nav {
 }
 
 #home-hero-shape {
-  position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(680px, 80vw, 800px);
   z-index: 2;
 }
 
-.home-hero-content {
-  display: flex;
-  z-index: 1;
+#home-feature-shape {
+  position: absolute;
+  top: 520px;
+  margin: auto 0;
+  z-index: 2;
 }
 
 .home-hero-text {
-  width: clamp(280px, 40vw, 600px);
+  width: clamp(360px, 40vw, 600px);
   margin: 0 auto;
   z-index: 4;
 }
@@ -173,8 +182,15 @@ nav {
 }
 
 #home-cutout-cake-slice {
-  left: 150px;
-  top: 101vh;
-  width: clamp(50px, 10vw, 150px);
+  top: 50%;
+  left: 50%;
+  transform: translate(180%, 80%);
+  width: clamp(80px, 10vw, 120px);
+  z-index: 3;
+}
+
+.home-feature-content {
+  position: relative;
+  top: -215px;
   z-index: 3;
 }
