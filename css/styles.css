@@ -163,7 +163,7 @@ header video {
   inset: 0;
   background: rgba(26, 17, 1, 0.559);
   pointer-events: none;
-  z-index: 2;
+  z-index: 1
 }
 
 
@@ -180,7 +180,6 @@ header video {
 .home-hero {
   position: relative;
   inset: 0;
-  top: 100px;
   color: var(--mm-color-baseCream);
   overflow: visible;
 }
@@ -188,28 +187,33 @@ header video {
 .home-hero-shape {
   display: block;
   position: absolute;
-  left: 12vw;
-  top: 4vh;
+  left: 8vw;
   width: clamp(600px, 60vw, 800px);
-  z-index: 3;
+  z-index: 1;
 }
 
 .home-hero-text {
   position: absolute;
   color: var(--mm-color-baseWhite);
   text-align: center;
-  width: clamp(250px, 40vw, 800px);
+  width: clamp(250px, 40vw, 600px);
   left: 15vw;
   top: 8vh;
-  z-index: 4;
+  z-index: 3;
 }
 
 #home-cutout-woman-carrying-bread {
   position: absolute;
+  width: 270px;
   bottom: -48vh;
-  right: 12vw;
+  right: 15vw;
   z-index: 3;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(100%, -40%); */
+}
+
+#home-cutout-cake-slice {
+  position: absolute;
+  width: 120px;
+  bottom: -10vh;
+  left: 15vw;
+  z-index: 3;
 }
