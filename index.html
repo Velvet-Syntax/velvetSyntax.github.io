@@ -37,40 +37,68 @@
             </div>
         </div>
     </nav>
-    
-    <header>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="/assets/home/HomeBroll_864x496.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
 
-        <div class="container-lg home-hero">
-            <img src="/assets/home/Home-Cloud-DGreen.svg" alt="Dark Green Cloud" class="home-hero-shape">
+<div class="container-fluid">
+    <div class="row hero-video">
+        <div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="/assets/home/HomeBroll_864x496.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div><img id="home-hero-shape" src="/assets/home/Home-Cloud-DGreen.svg" alt="Dark Green Cloud"></div>
+    </div>
+</div>
+<div class="container-lg">
+  <div class="row flex-column home-hero-content gutter-0">
+        <div class="col d-flex justify-content-start">
+            <img id="home-cutout-cake-slice" src="/assets/cutouts/Cake-Slice.png" alt="Cake Slice">
+        </div>
+        <div class="col mt-5 text-center home-hero-text text-light">
+            <h1>We’re on a roll…</h1>
+            <p class="p-2">Founded in 2020, Michi Michi is a San Diego bakery co-op where traditional craft and creativity have always gone hand in hand. A collective of 10 local bakers, we make pastries the right way: classic technique, unique flavors, and a seasonal menu that gives you a reason to come back.</p>
+            <button type="button" class="btn btn-light">See what’s on the menu</button>
+        </div>
+
+        <div class="col d-flex justify-content-end">
+            <img id="home-cutout-woman-carrying-bread" src="/assets/cutouts/Woman-Carrying-Bread.png" alt="Woman Carrying Bread">
+        </div>
+  </div>
+</div>
+    
+    <!-- <header class="container-fluid">
+        <div class="container-fluid">
+            
+            <div class="row">
+                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="/assets/home/HomeBroll_864x496.mp4" type="video/mp4">
+                 </video>
+                <div class="video-overlay"></div>
+                <div class="home-hero-shape"><img src="/assets/home/Home-Cloud-DGreen.svg" alt="Dark Green Cloud" id="home-hero-green-cloud"></div>
+            </div>
+       </div>
+
+        <div class="container-lg home-hero flex-column">
             <div class="row">
                 <div class="col-3"></div>
-                <div class="col-6 home-hero-text m-3">
+                    <img id="home-cutout-cake-slice" src="/assets/cutouts/Cake-Slice.png" alt="Cake Slice">
+                </div>
+
+                <div class="col-">
                     <h1>We’re on a roll…</h1>
                     <p class="p-2 text-light">Founded in 2020, Michi Michi is a San Diego bakery co-op where traditional craft and creativity have always gone hand in hand. A collective of 10 local bakers, we make pastries the right way: classic technique, unique flavors, and a seasonal menu that gives you a reason to come back.</p>
                     <button type="button" class="btn btn-light">See what’s on the menu</button>
                 </div>
-                <div class="col-3">
-                    <img id="home-cutout-woman-carrying-bread" src="/assets/cutouts/Woman-Carrying-Bread.png" alt="Woman Carrying Bread" width="270px">
-                </div>
-            </div>
-        </div>
-                <!-- <div class="home-hero">
-                    <img src="/assets/home/Home-Cloud-DGreen.svg" alt="Dark Green Cloud" class="home-hero-shape">
-                    <div class="home-hero-text m-3">
-                        <h1>We’re on a roll…</h1>
-                        <p class="p-2 text-light">Founded in 2020, Michi Michi is a San Diego bakery co-op where traditional craft and creativity have always gone hand in hand. A collective of 10 local bakers, we make pastries the right way: classic technique, unique flavors, and a seasonal menu that gives you a reason to come back.</p>
-                        <button type="button" class="btn btn-light">See what’s on the menu</button>
-                    </div>
-                    <img id="home-cutout-woman-carrying-bread" src="/assets/cutouts/Woman-Carrying-Bread.png" alt="Woman Carrying Bread" width="270px">
-                </div> -->
-        
-        </div>
-    </header>
 
+                <div class="col-3">
+                    <img id="home-cutout-woman-carrying-bread" src="/assets/cutouts/Woman-Carrying-Bread.png" alt="Woman Carrying Bread">
+                </div>
+                
+            </div>
+       </div>
+    </header> -->
+
+    <section class="home-about"></section>
     <h2>Michi Michi Bakery</h2>
 
 
