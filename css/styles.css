@@ -65,7 +65,7 @@ h1 {
 h2 {
   font-family: var(--mm-font-main);
   font-size: var(--mm-text-h2);
-  font-weight: var(--mm-weight-semibold);
+  font-weight: var(--mm-weight-regular);
   line-height: var(--mm-line-reg);
 }
 
@@ -166,7 +166,7 @@ nav {
 }
 
 .video-overlay {
-  background-color: rgba(37, 31, 8, 0.6);
+  background-color: rgba(22, 18, 1, 0.4);
   object-fit: cover;
   pointer-events: none;
   z-index: 1
@@ -267,6 +267,7 @@ nav {
 /* Newsletter Field */
 .newsletter-signup {
   background-color: var(--mm-color-baseMint);
+  height: 270px;
 }
 
 .newsletter-signup .newsletter-form {
