@@ -16,7 +16,8 @@
   /* Variable Font Weights */
   --mm-weight-bold: 700;
   --mm-weight-semibold: 600;
-  --mm-weight-regular: 300;
+  --mm-weight-regular: 400;
+  --mm-weight-light: 300;
 
   /* Variable Type Scale */
   --mm-text-hero: clamp(2.5rem, 2rem + 2vw, 3.813rem);
@@ -133,6 +134,18 @@ nav {
   color: var(--mm-color-primaryDark);
 }
 
+.btn-greenb {
+  border: 1px solid var(--mm-color-primaryDark);
+  background-color: transparent !important;
+}
+
+/* Divider Styles */
+.green-divider {
+  border: 1px solid var(--mm-color-accentGreen);
+  opacity: 1;
+}
+
+/* Home Page Styles */
 .hero-video video, .video-overlay, #home-hero-shape {
   position: absolute;
   top: 0;
@@ -147,7 +160,7 @@ nav {
 }
 
 .video-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(37, 31, 8, 0.6);
   object-fit: cover;
   pointer-events: none;
   z-index: 1
@@ -191,6 +204,50 @@ nav {
 
 .home-feature-content {
   position: relative;
-  top: -215px;
+  margin-top: -215px;
   z-index: 3;
 }
+
+#collab-logo {
+  width: clamp(300px, 80%, 650px);
+}
+
+.home-feature-tile {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+#home-merch-shape {
+  position: absolute;
+  top: 1120px;
+  width: clamp(200px, 30vw, 400px);
+  z-index: 3;
+}
+
+.home-merch-tile {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.home-merch .card-group {
+  gap: 1rem;
+}
+
+.home-merch .card {
+  border: none;
+  background-color: transparent;
+}
+
+.home-merch .card-body {
+  padding: .5rem 0;
+}
+
+.home-merch .card-img-top {
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
