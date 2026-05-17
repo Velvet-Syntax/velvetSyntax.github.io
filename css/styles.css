@@ -223,20 +223,32 @@ footer .nav-link, footer a {
   z-index: 4;
 }
 
-#home-cutout-woman-carrying-bread {
+#home-cutout-woman-carrying-bread-wrap {
   top: 50%;
   left: 50%;
   transform: translate(-20%, -50%);
-  width: clamp(200px, 30vw, 300px);
   z-index: 3;
 }
 
-#home-cutout-cake-slice {
+#home-cutout-woman-carrying-bread {
+  display: block;
+  width: clamp(200px, 30vw, 300px);
+  transform-origin: center;
+  animation: wiggleSubtle 3s ease-in-out infinite;
+}
+
+#home-cutout-cake-slice-wrap {
   top: 50%;
   left: 50%;
   transform: translate(180%, 80%);
   width: clamp(80px, 10vw, 120px);
   z-index: 3;
+}
+
+#home-cutout-cake-slice {
+  width: clamp(80px, 10vw, 120px);
+  animation: wiggleSubtle 3s ease-in-out infinite;
+  transform-origin: center;
 }
 
 .home-feature-content {
@@ -295,6 +307,34 @@ footer .nav-link, footer a {
   z-index: 0;
 }
 
+
+/* Animation */
+.ani-wiggle-subtle {
+  display: inline-block;
+  animation: wiggleSubtle 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes wiggleSubtle {
+  0%, 100% {
+    transform: rotate(0deg) translateX(0);
+  }
+  25% {
+    transform: rotate(-1deg) translateX(-2px);
+  }
+  50% {
+    transform: rotate(1deg) translateX(2px);
+  }
+  75% {
+    transform: rotate(-0.5deg) translateX(-1px);
+  }
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--mm-color-baseMint);
+}
+  
 /* Newsletter Field */
 .newsletter-signup {
   background-color: var(--mm-color-baseMint);
