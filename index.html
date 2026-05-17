@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michi Michi Bakery - Home</title>
-     <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
-     <script src="https://kit.fontawesome.com/04dfd21acf.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico">
+    <script src="https://kit.fontawesome.com/04dfd21acf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,7 +93,7 @@
                 </div>
                 <div class="col-sm text-left py-3">
                     <img src="/assets/cutouts/Limited-Time-Badge.png" alt="Limited Time Menu, Available until 5/31" width="300px"></br></br>
-                    <p>We’re proud to welcome Julien Demochy as our resident baker for Summer 2026, bringing his signature blend of discipline, curiosity, and creativity to our kitchen and our menu. Julien brings a quietly obsessive approach to everything he makes. Trained in classical French pastry technique, Julien has spent years perfecting his craft: the precise lamination of a croissant, the balance of a custard, the moment a flavor combination becomes unforgettable,</p>
+                    <p>We’re proud to welcome Julien Demochy as our resident baker for Summer 2026. Julien brings a quietly obsessive approach to everything he makes. Trained in classical French pastry technique, Julien has spent years perfecting his craft: the precise lamination of a croissant, the balance of a custard, and the moment a flavor combination becomes unforgettable,</p>
                     <a class="btn btn-light btn-greenb" href="/menu.html">See What’s on Julien’s Menu</a>
                 </div>
                 <hr class="green-divider mt-3">
@@ -104,7 +104,7 @@
     <section class="home-merch container-auto">
         <img id="home-merch-shape" src="/assets/home/Home-SCloud-DGreen.svg" alt="Small Green Cloud">
         <div class="card-group container-lg">
-            <h2>Michi Merch</h2>
+            <h2>Michi Merch: <span class="green-text">Coming Soon</span></h2>
             <div class="card">
                 <img class="card-img-top" src="/assets/home/Merch-Tote2.png" alt="Michi Michi Logo Tote Bag">
                 <div class="card-body">
@@ -122,36 +122,233 @@
             <div class="card">
                 <img class="card-img-top" src="/assets/home/Merch-MSweater2.png" alt="Michi Michi Brand Logo Sweater" >
                 <div class="card-body">
-                <p class="card-text">Brand Oversized Sweater</br>$45.00</p>
+                <p class="card-text">Brand Oversized Sweater</br>$38.00</p>
                 </div>
             </div>
             </div>
     </div>
     </section>
 
-    <section class="newsletter-signup container-auto my-5">
+    <section class="newsletter-signup container-auto my-5 p-5">
         <div class="row container-auto gutter-0">
             <div class="col-3 d-flex justify-content-end p-0">
-                <img id="home-cutout-man-sitting" src="/assets/cutouts/Man-Sitting.png" alt="Man Enoying a Pastry and Coffee">
+                <img id="home-cutout-man-sitting" src="/assets/cutouts/Man-Sitting.png"
+                    alt="Man Enoying a Pastry and Coffee">
             </div>
             <div class="col-6 text-center p-0">
                 <h3>Fresh from the oven to your inbox</h3>
                 <p>New menu items. Exclusive events. Member discounts. One email a month, never more. Sign up for our newsletter below and enjoy 10% off your next purchase.</p>
-                
+
                 <form class="newsletter-form d-flex justify-content-center align-items-center">
                     <div class="form-floating newsletter-field">
-                        <input type="email" class="form-control newsletter-input" id="emailInput" placeholder="GordonRamsey@HellsKitchen.com">
+                        <input type="email" class="form-control newsletter-input" id="emailInput"
+                            placeholder="GordonRamsey@HellsKitchen.com">
                         <label for="emailInput">Email address</label>
                     </div>
                     <button type="submit" class="btn btn-dark newsletter-submit">I'm in!</button>
                 </form>
-            </div>
-            <div class="col-auto">
+                </div>
+                <div class="col-auto">
             </div>
         </div>
     </section>
+ 
+    <section class="FAQ-accordion container-lg my-5 px-5">
+        <h3 class="text-center mb-4">FAQ</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                        Do I need to order in advance or can I walk in?
+                    </button>
+                </h2>
+                <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Walk-ins are always welcome and make up a big part of what we love about running a neighborhood
+                            bakery. You can come in any day, see what is at the counter, and leave with something wonderful.
+                        </p>
+                        <p>If you have a specific item in mind, especially on weekends or for our more limited seasonal
+                            specials, we strongly recommend ordering ahead through our website. It takes two minutes and
+                            saves you the heartbreak of showing up for the Earl Grey Morning Bun and finding an empty tray.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                        How does your menu work and how often does it change?
+                    </button>
+                </h2>
+                <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>We run two menus. The first is our core menu: the classics and house signatures that are available consistently week to week. These are the items that have earned their permanent spot
+                            through sheer popularity and quality.</p>
+                        <p>The second is our rotating seasonal menu, which changes based on what our bakers are excited
+                            about, and what is in season locally. Seasonal specials can change weekly or bi-weekly. We
+                            announce new items on <a href="https://www.instagram.com/michimichibakery"
+                                target="_blank">Instagram</a> first so following us there is the best way to stay current.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                        Do you take custom orders?
+                    </button>
+                </h2>
+                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Yes! Whether you are planning a wedding, a birthday, a corporate breakfast, a dinner party, or
+                            simply an occasion that deserves really good pastries, we want to be involved. Email us at <a href="mailto:hello@michimichibakery.com?subject=Michi%20Michi%20Custom%20Order">hello@michimichibakery.com</a>
+                            with as much detail as you have and at least five business days notice. For larger or more
+                            complex orders we ask for a bit more lead time. We work with a limited number of custom orders
+                            each month.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading3b">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse3b" aria-expanded="false" aria-controls="flush-collapse3b">
+                        Do you do catering, pop-ups, or private events?
+                    </button>
+                </h2>
+                <div id="flush-collapse3b" class="accordion-collapse collapse" aria-labelledby="flush-heading3b"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Yes to all three. We have catered everything from intimate dinner parties to large corporate
+                            breakfasts and we have done pop-ups with some of our favorite local brands and businesses in San
+                            Diego. (See our <a href="/community.html">community page</a> for our schedule of events.)</p>
+                        <p>If you have something in mind, reach out to us at <a href="mailto:hello@michimichibakery.com?subject=Michi%20Michi%20Event%20Inquiry">hello@michimichibakery.com</a>
+                            and tell us about it. We keep our external commitments intentional and limited.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                        What dietary restrictions can you accommodate?
+                    </button>
+                </h2>
+                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>We have vegan options across both our core and seasonal menus. We also rotate a small selection of gluten free items, typically 2-4 offerings per week.</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                        Can you tell me more about the co-op model?
+                    </button>
+                </h2>
+                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Michi Michi was founded in 2020 as a bakery co-op, which means it is run as a collective of local
+                            San Diego bakers rather than a single owner-operator model. Each baker who is part of Michi
+                            Michi has a stake in the business, the menu, and the quality of what comes out of the kitchen
+                            every day.</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                        I am a baker. How do I get involved with Michi Michi?
+                    </button>
+                </h2>
+                <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Michi Michi is always open to connecting with talented bakers who believe in doing things the
+                            right way and are not afraid to get creative. If you are interested in joining the co-op or
+                            being considered for a guest residency, send us an email at <a
+                                href="mailto:hello@michimichibakery.com?subject=Michi%20Michi%20New%20Baker%20Inquiry">hello@michimichibakery.com</a>.
+                            Tell us about yourself, your background, what you make, and why Michi Michi feels like the right
+                            fit. We read every single inquiry and while we cannot always respond immediately, the right
+                            opportunities have a way of coming together.</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                        How does the guest baker residency program work?
+                    </button>
+                </h2>
+                <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>The Michi Michi residency program is our way of bringing fresh creative energy into the kitchen
+                            on a seasonal basis. Each residency is a chance for a talented baker to design and run their own
+                            seasonal menu under the Michi Michi roof, with the full support of our co-op behind them. Think
+                            of it as a creative takeover with really good infrastructure.</p>
+                        <p>Residencies are seasonal, typically eight to twelve weeks, and we select bakers based on their
+                            craft, their creative point of view, and their fit with the Michi Michi community. To be
+                            considered, email <a
+                                href="mailto:hello@michimichibakery.com?subject=Michi%20Michi%20New%20Baker%20Inquiry">hello@michimichibakery.com</a>
+                            with your background, examples of your work, and a short pitch for what your residency menu
+                            might look like. We want to see how you think, not just what you can bake.</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
 
+    <footer class="container-fluid">
+        <div class=" container-lg d-flex flex-wrap justify-content-between py-3 my-4 text-start text-light">
+        
+            <a href="/home.html" class="col-md-2 d-flex">
+                <img src="/assets/logos/Michi Michi Logo - Stacked Wordmark - RGB Cream.svg" alt="Michi Michi Bakery" width="80">
+            </a>
 
+            <p class="col-md-2 mb-0 text-start">
+                <strong>Bankers Hill</strong></br>
+                2800 Fifth Ave,</br>
+                San Diego, CA 92103</br>
+                619-973-5731
+            </p>
+
+            <p class="col-md-2 mb-0 text-start">
+                <strong>Bakery Hours:</strong></br>
+                <strong>8am - 2pm</strong> Thurs - Sun</br>
+                <strong>Closed:</strong> Mon - Wed
+            </p>
+
+            <p class="col-md-5 mb-0 text-end align-self-start">
+                <a href="https://www.instagram.com/michimichibakery" target="_blank"><i class="fa-brands fa-facebook"></i></a> <a href="https://www.instagram.com/michimichibakery" target="_blank"><i class="fa-brands fa-instagram"></i></a><br>
+                <span>© 2026 Michi Michi Bakery, All Rights Reserved</span>
+            </p>
+        
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 

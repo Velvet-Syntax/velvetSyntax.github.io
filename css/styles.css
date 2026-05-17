@@ -44,8 +44,9 @@ body {
   color: var(--mm-color-primaryDark);
 }
 
+
 .text-light {
-  color: var(--mm-color-baseWhite);
+  color: var(--mm-color-baseCream);
 }
 
 .hero-text {
@@ -97,7 +98,20 @@ p {
   font-size: var(--mm-text-body);
   font-weight: var(--mm-weight-regular);
   line-height: var(--mm-line-loose);
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.04rem;
+}
+
+a {
+  color: var(--mm-color-accentOrange);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--mm-color-accentYellow);
+}
+
+.green-text {
+  color: var(--mm-color-accentGreen);
 }
 
 /* Navigation Bar Styles */
@@ -115,6 +129,23 @@ nav a {
 nav {
   position: relative;
   z-index: 999;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--mm-color-primaryDark);
+  color: var(--mm-color-baseCream);
+  padding: 1.5rem 0;
+}
+
+footer span {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+footer .nav-link, footer a {
+  color: var(--mm-color-baseCream);
 }
 
 /* Button Styles */
