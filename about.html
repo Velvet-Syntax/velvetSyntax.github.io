@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico?v=2">
+    <link rel="icon" type="image/x-icon" href="assets/team/favicon.ico?v=2">
      <script src="https://kit.fontawesome.com/04dfd21acf.js" crossorigin="anonymous"></script>
     <title>About Us</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -15,41 +15,99 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   <!-- Navbar -->
-            <nav class="navbar sticky-top navbar-expand-lg my-custom-navbar">
-            <div class="container-fluid">
-            <a href="#"><img src="images/3.png" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-lg">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/Michi Michi Logo - Stacked Wordmark - RGB Black.svg" alt="Michi Michi Bakery" width="100" ></a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="visit.html">Visit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="community.html">Community</a>
-                    </li>
-                    <li class="nav-item">
-                     <a class="nav-link" href="menu.html">Menu</a>
-                   </li>
-                   <li class="nav-item">
-                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasContact" role="button" aria-controls="offcanvasContact">Contact</a>
-                    </li>
-                </ul>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    <a class="nav-link" href="/about.html">About</a>
+                    <a class="nav-link" href="/visit.html">Visit</a>
+                    <a class="nav-link" href="/community.html">Community</a>
+                    <a class="nav-link" href="/menu.html">Menu</a>
+                    <a class="btn btn-bright mx-2" data-bs-toggle="offcanvas" href="#offcanvasLargeOrder" role="button" aria-controls="offcanvasContact">Order Catering</a>
+                </div>
             </div>
-            </div>
-            </nav>
-            <!-- Hero Section -->
+        </div>
+    </nav>
+
+    <!-- Off-Canva Order Form From Nav Bar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLargeOrder"
+        aria-labelledby="offcanvasLargeOrderLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLargeOrderLabel">Catering Preorder</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    
+        <div class="offcanvas-body">
+            <p class="mb-4">Bring a fresh pastry spread to your next meeting, celebration, or gathering. Share a few details at least 5 days in advance, and we’ll be in touch!<br></p>
+            <p class="small text-muted">This form is only for large orders of over a dozen. We're currently not able to accomodate preorders for smaller quantities.</p>
+    
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="eventDate" class="form-label">Date needed</label>
+                    <input type="date" class="form-control" id="eventDate" name="eventDate">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="orderCount" class="form-label">Order quantity (Minimum: 12)</label>
+                    <input type="number" class="form-control" id="orderCount" name="orderCount" min="12" placeholder="12">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="orderType" class="form-label">What are you looking for?</label>
+                    <select class="form-select" id="orderType" name="orderType">
+                        <option selected disabled>Select one</option>
+                        <option>Breakfast pastries</option>
+                        <option>Pastry boxes</option>
+                        <option>Desserts</option>
+                        <option>Custom assortment</option>
+                        <option>A mix of the above (please elaborate in notes)</option>
+                        <option>Not sure yet</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="details" class="form-label">Order details</label>
+                    <textarea class="form-control" id="details" name="details" rows="4"></textarea>
+                </div>
+    
+                <div class="mb-4">
+                    <label for="notes" class="form-label">Allergies, dietary needs, or other notes</label>
+                    <textarea class="form-control" id="notes" name="notes" rows="4"></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-bright">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+<!-- Hero Section -->
 <section class="hero">
-  <img src="images/hero img.jpg" alt="Company Hero Image" class="hero-img">
+  <img src="assets/team/hero img.jpg" alt="Company Hero Image" class="hero-img">
   <h2>Our Story</h2>
    <p>Michi Michi was created as a space for connection through food—where ideas, cultures, and people come together at the table. What began as a simple vision has grown into a platform for chefs to create, collaborate, and share their stories. By welcoming resident chefs from different backgrounds, Michi Michi offers an ever-evolving dining experience shaped by diverse perspectives and traditions. Each residency brings something new, inviting guests to explore flavors, techniques, and narratives from around the world.</p>
   <h2>Our Mission</h2><p>Our mission is to foster creativity and cultural exchange through food. We aim to support chefs by providing a space to experiment, collaborate, and showcase their craft while building meaningful connections with the community. Through thoughtful dining experiences, we strive to celebrate diversity, spark curiosity, and create moments that bring people together.</p>
@@ -59,7 +117,7 @@
   <h2>Meet the Team</h2>
   <div class="team-grid">
     <a href="#alex-modal" class="member">
-    <img src="images/team1.jpg" alt="alex">
+    <img src="assets/team/team1.jpg" alt="alex">
     <p>Alex</p>
      </a>
   <div id="alex-modal" class="modal">
@@ -70,7 +128,7 @@
     </div>
     </div>
     <a href="#maria-modal" class="member">
-    <img src="images/team2.jpg" alt="maria">
+    <img src="assets/team/team2.jpg" alt="maria">
     <p>Maria</p>
      </a>
   <div id="maria-modal" class="modal">
@@ -81,7 +139,7 @@
     </div>
     </div>
     <a href="#dennis-modal" class="member">
-    <img src="images/team3.jpg" alt="dennis">
+    <img src="assets/team/team3.jpg" alt="dennis">
     <p>Dennis</p>
      </a>
     <div id="dennis-modal" class="modal">
@@ -92,7 +150,7 @@
     </div>
     </div>
     <a href="#lia-modal" class="member">
-    <img src="images/team4.jpg" alt="lia">
+    <img src="assets/team/team4.jpg" alt="lia">
     <p>Lia</p>
      </a>
     <div id="lia-modal" class="modal">
@@ -103,7 +161,7 @@
     </div>
     </div>
     <a href="#helen-modal" class="member">
-    <img src="images/team5.jpg" alt="helen">
+    <img src="assets/team/team5.jpg" alt="helen">
     <p>Helen</p>
      </a>
     <div id="helen-modal" class="modal">
@@ -114,7 +172,7 @@
     </div>
 </div>
     <a href="#ken-modal" class="member">
-    <img src="images/team6.jpg" alt="ken">
+    <img src="assets/team/team6.jpg" alt="ken">
     <p>Ken</p>
      </a>
     <div id="ken-modal" class="modal">
@@ -125,7 +183,7 @@
     </div>
 </div>
     <a href="#chris-modal" class="member">
-    <img src="images/team7.jpg" alt="chris">
+    <img src="assets/team/team7.jpg" alt="chris">
     <p>Chris</p>
      </a>
     <div id="chris-modal" class="modal">
@@ -136,7 +194,7 @@
     </div>
 </div>
    <a href="#molly-modal" class="member">
-    <img src="images/team8.jpg" alt="molly">
+    <img src="assets/team/team8.jpg" alt="molly">
     <p>Molly</p>
      </a>
     <div id="molly-modal" class="modal">
@@ -147,78 +205,39 @@
     </div>
 </div>
 </section>
-<!-- Back to Top button -->
-<footer class="footer">
-               <!-- Part 1: Address -->
-            <div class="footer-column">
-                <h3>Our Location</h3>
-                <p> Bankers Hill<br> 
-                2800 Fifth Ave, San Diego, CA 92103<br>
-                619-973-5731</p>
-            </div>
-            <!-- Part 2: Working Hours -->
-            <div class="footer-column">
-                <h3>Bakery Hours</h3>
-                <p>8am - 2pm Thurs - Sun<br>
-                Closed: Mon - Wed</p>
-            </div>
-            <!-- Part 3: Copyright & Facebook -->
-            <div class="footer-column">
-                <div class="social-icons-wrapper">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                 </div>
-                <p>&copy;2026 Michi Michi Bakery, All Rights Reserved</p>
-            </div>
-            <!-- Back to Top Button -->
-<button id="backToTopBtn" title="Go to top">
-  Back to Top
-</button>
-</footer>
-            <!-- Off-Canvas Form -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasContact" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact Us</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                </div>
-                <div class="mb-3">
-                    <label for="Email1" class="form-label">Email address</label>
-                    <input type="text" class="form-control" id="email" placeholder="Your Email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea name="message" class="form-control" id="message" placeholder="Your message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </div> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
-<script>
-  const backToTopBtn = document.getElementById("backToTopBtn");
 
-  // Show button when scrolling down 200px
-  window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      backToTopBtn.style.display = "block";
-    } else {
-      backToTopBtn.style.display = "none";
-    }
-  };
+<!-- Footer Updated 05/18/26 -->
+    <footer class="container-fluid">
+        <div class="container-lg py-3 my-4 text-start">
+            <div class="row align-items-start">
+                <div class="col-12 col-md-2 d-flex align-items-start mb-2">
+                    <a href="/home.html" class="d-block">
+                        <img src="/assets/logos/Michi Michi Logo - Vertical - RGB Cream.svg" alt="Michi Michi Bakery" width="80">
+                    </a>
+                </div>
 
-  // Smooth scroll back to top on click
-  backToTopBtn.addEventListener("click", function() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-</script>   
+                <div class="col-12 col-md-2 mb-2 text-start">
+                    <address>
+                        <i class="fa-solid fa-location-dot">&ensp;</i></i><strong>Bankers Hill</strong></br>
+                        2800 Fifth Ave,</br>
+                        San Diego, CA 92103</br>
+                        619-973-5731
+                    </address>
+                </div>
+
+                <div class="col-12 col-md-2 mb-2 text-start">
+                    <i class="fa-solid fa-clock"></i>&ensp;<strong>Bakery Hours:</strong></br>
+                    <strong>8am - 2pm</strong> Thurs - Sun</br>
+                    <strong>Closed:</strong> Mon - Wed
+                </div>
+
+                <div class="col-12 col-md-6 mb-0 text-end">
+                    <a href="https://www.instagram.com/michimichibakery" target="_blank"><i class="fa-brands fa-facebook"></i></a> <a href="https://www.instagram.com/michimichibakery" target="_blank"><i class="fa-brands fa-instagram"></i></a><br>
+                    <span>© 2026 Michi Michi Bakery, All Rights&nbsp;Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
