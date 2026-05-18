@@ -35,8 +35,19 @@
 }
 
 
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: color-mix(in srgb, var(--mm-color-baseCream) 70%, transparent);
+}
+
+footer {
+  margin-top: auto;
 }
 
 /* Text Styles */
@@ -275,22 +286,28 @@ footer .nav-link, footer a {
   z-index: 3;
 }
 
-.home-merch .card-group {
+.home-merch .card-group, .menu-cards .card-group {
   gap: 1rem;
 }
 
-.home-merch .card {
+.home-merch .card, .menu-cards .card {
   border: none;
   background-color: transparent;
   z-index: 4;
 }
 
-.home-merch .card-body {
+.home-merch .card-body, .menu-cards .card-body {
   padding: .5rem 0;
 }
 
-.home-merch .card-img-top {
+.home-merch .card-img-top, .menu-cards .card-img-top {
   height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.menu-cards .card-img-top {
+  height: 200px;
   object-fit: cover;
   object-position: top;
 }
@@ -354,4 +371,63 @@ footer .nav-link, footer a {
 .newsletter-signup .newsletter-submit {
   border-radius: 8px;
   padding: 20px 30px;
+}
+
+
+/* Menu Page Styles */
+.menu-hero {
+  background-color: var(--mm-color-primaryDark);
+  position: relative;
+  min-height: 450px;
+}
+
+.menu-hero .container-lg {
+  position: relative;
+}
+
+.menu-hero-copy {
+  max-width: 640px;
+}
+
+.menu-hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.menu-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#menu-cutout-woman-carrying-bread-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -15%);
+  z-index: 3;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .menu-hero-image {
+    display: none;
+  }
+
+  #menu-cutout-woman-carrying-bread-wrap {
+  transform: translate(40%, -15%);
+  }
+}
+
+@media (max-width: 814px) {
+ 
+  #menu-cutout-woman-carrying-bread-wrap {
+  transform: translate(38%, 45%);
+  }
 }
