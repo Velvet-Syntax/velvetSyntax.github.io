@@ -181,7 +181,19 @@ footer .nav-link, footer a {
   color: var(--mm-color-baseWhite);
 }
 
-.btn-greenb {
+.btn-bright {
+  background-color: var(--mm-color-accentOrange);
+  color: var(--mm-color-baseWhite);
+  font-weight: var(--mm-weight-regular);
+  transition: color 0.3s ease;
+}
+
+.btn-bright:hover {
+  background-color: var(--mm-color-primaryDark);
+  color: var(--mm-color-baseWhite);
+}
+
+.btn-green-border {
   border: 1px solid var(--mm-color-primaryDark);
   background-color: transparent !important;
 }
@@ -308,19 +320,28 @@ footer .nav-link, footer a {
 
 .menu-cards .card-img-top {
   height: 200px;
-  object-fit: cover;
-  object-position: top;
+  object-position: center;
+}
+
+.menu-cards a {
+  color: var(--mm-color-accentGreen);
 }
 
 .home-merch h2 {
   position: absolute;
-  color: var(--mm-color-baseCream);
+  color: var(--mm-color-accentGreen);
   margin-top: -55px;
   z-index: 5;
 } 
 
 #home-cutout-man-sitting {
-  width: clamp(150px, 30vw, 250px);
+  display: block;
+  width: clamp(100px, 15vw, 250px);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  max-height: 100%;
   z-index: 0;
 }
 
@@ -401,7 +422,7 @@ footer .nav-link, footer a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
 #menu-cutout-woman-carrying-bread-wrap {
@@ -415,8 +436,19 @@ footer .nav-link, footer a {
 
 
 /* Responsive Styles */
+/* Extra Large Screens */
+@media (min-width: 1200px) {
+  /* Placeholder */
+}
+
+/* Extra Large Screens */
+@media (min-width: 1120px) {
+
+}
+
+/* Large Screens */
 @media (max-width: 992px) {
-  .menu-hero-image {
+    .menu-hero-image {
     display: none;
   }
 
@@ -425,9 +457,35 @@ footer .nav-link, footer a {
   }
 }
 
+/* Small Screens */
+@media (max-width: 576px) {
+ .home-hero-text {
+  margin-bottom: 120px;
+ }
+
+ #home-merch-shape {
+  display: none;
+  }
+
+  #home-cutout-man-sitting {
+  display: none;
+  }
+}
+
+/* Custom One-offs */
 @media (max-width: 814px) {
  
   #menu-cutout-woman-carrying-bread-wrap {
   transform: translate(38%, 45%);
+  }
+
+  .home-hero-text {
+  margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1655px) {
+  .home-merch h2 {
+    color: var(--mm-color-baseCream);
   }
 }
