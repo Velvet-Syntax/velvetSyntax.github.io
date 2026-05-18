@@ -335,13 +335,11 @@ footer .nav-link, footer a {
 } 
 
 #home-cutout-man-sitting {
-  display: block;
-  width: clamp(100px, 15vw, 250px);
+  width: clamp(180px, 20vw, 250px);
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
   object-fit: contain;
   object-position: center;
-  max-height: 100%;
   z-index: 0;
 }
 
