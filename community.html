@@ -37,6 +37,72 @@
             </div>
         </div>
     </nav>
+
+    <!-- Off-Canvas Order Form From Nav Bar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLargeOrder"
+        aria-labelledby="offcanvasLargeOrderLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLargeOrderLabel">Catering Preorder</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    
+        <div class="offcanvas-body">
+            <p class="mb-4">Bring a fresh pastry spread to your next meeting, celebration, or gathering. Share a few details at least 5 days in advance, and we’ll be in touch!<br></p>
+            <p class="small text-muted">This form is only for large orders of over a dozen. We're currently not able to accomodate preorders for smaller quantities.</p>
+    
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="eventDate" class="form-label">Date needed</label>
+                    <input type="date" class="form-control" id="eventDate" name="eventDate">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="orderCount" class="form-label">Order quantity (Minimum: 12)</label>
+                    <input type="number" class="form-control" id="orderCount" name="orderCount" min="12" placeholder="12">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="orderType" class="form-label">What are you looking for?</label>
+                    <select class="form-select" id="orderType" name="orderType">
+                        <option selected disabled>Select one</option>
+                        <option>Breakfast pastries</option>
+                        <option>Pastry boxes</option>
+                        <option>Desserts</option>
+                        <option>Custom assortment</option>
+                        <option>A mix of the above (please elaborate in notes)</option>
+                        <option>Not sure yet</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="details" class="form-label">Order details</label>
+                    <textarea class="form-control" id="details" name="details" rows="4"></textarea>
+                </div>
+    
+                <div class="mb-4">
+                    <label for="notes" class="form-label">Allergies, dietary needs, or other notes</label>
+                    <textarea class="form-control" id="notes" name="notes" rows="4"></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-bright">Place Order</button>
+            </form>
+        </div>
+    </div>
 <!-- Hero -->
     <section class="community-hero container-fluid p-0">
     <img src="images/community-hero.jpg" alt="Community Hero Image" class="img-fluid">
@@ -157,6 +223,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
