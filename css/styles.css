@@ -535,8 +535,7 @@ footer .nav-link, footer a {
 .contact-container address {
     width: 100%;
 }
-.info-column, 
-.contact-container .form-container {
+.info-column .contact-container .form-container {
     flex: 1; 
     width: auto; 
 }
@@ -568,6 +567,18 @@ form {
 }
 .full-width {
     grid-column: span 2; 
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+label, legend {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.inline-field label {
+  font-weight: 400;
 }
 input[type="email"],input[type="text"],input[type="tel"],textarea, select {
     width:100%;

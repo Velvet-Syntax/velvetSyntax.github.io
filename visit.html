@@ -102,9 +102,8 @@
             </form>
         </div>
     </div>
-
     <section class="container">
-        <h2>Visit Us</h2>
+        <h2 class="mt-5">Visit Us</h2>
         <div class="contact-container">
             <div class="info-column">
             <address>
@@ -116,9 +115,9 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.170476258394!2d-117.16311042488007!3d32.734663686150206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d954b8144e6ecd%3A0xb1d4f5800f76625c!2s2800%20Fifth%20Ave%2C%20San%20Diego%2C%20CA%2092103!5e0!3m2!1sen!2sus!4v1778328235674!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="form-container">
-                <h2>Questions? <span class="custom-gap">Contact Us</span></h2>
+                <h2>Contact Us</h2>
                 <p><em>Note: Fields highlighted in red are required.</em></p>
-                <form action="" method="post">
+                <form action="" method="post" name="contact">
                     <div class="form-group">
                         <label>First Name:</label>
                         <input type="text" name="fname" maxlength="30" required placeholder="First Name">
@@ -139,23 +138,58 @@
                         <label>Email Address:</label>
                         <input type="email" name="email" maxlength="30" autocomplete="email" required placeholder="example@domain.com">
                     </div>
-                    <div class="form-group">
-                        <label>Preferred Contact Method:</label>
-                        <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioEmail" id="radioEmail">
-                        <label class="form-check-label" for="radioEmail">
-                            Email
-                        </label>
+                    <div class="form-group full-width">
+                        <label for="count">Inquiry Type</label>
+                        <select name="count" id="count">
+                            <option value="inquiry">Select an inquiry type</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="catering">Catering Request</option>
+                            <option value="community">Community Event</option>
+                            <option value="residency">Residency Program</option>
+                            <option value="collaboration">Collaboration Opportunity</option>
+                        </select>
+                    </div>
+                    <fieldset class="form-group">
+                        <legend>Preferred Contact Method:</legend>
+                        <div class="inline-field">
+                            <input type="radio" name="contact-type" id="contact-type1" value="contact-type1">
+                            <label for="contact-type1">Email</label>
                         </div>
-                        <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioPhone" id="radioPhone">
-                        <label class="form-check-label" for="radioPhone">
-                            Phone
-                        </label>
+                        <div class="inline-field">
+                            <input type="radio" name="contact-type" id="contact-type2" value="contact-type2">
+                            <label for="contact-type2">Phone</label>
                         </div>
+                        <div class="inline-field">
+                            <input type="radio" name="contact-type" id="contact-type3" value="contact-type2">
+                            <label for="contact-type3">Text</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend>How Did You Hear About Us?</legend>
+                        <div class="inline-field">
+                            <input type="checkbox" name="how" id="instagram" value="instagram">
+                            <label for="instagram">Instagram</label>
+                        </div>
+                        <div class="inline-field">
+                            <input type="checkbox" name="how" id="tiktok" value="tiktok">
+                            <label for="tiktok">TikTok</label>
+                        </div>
+                        <div class="inline-field">
+                            <input type="checkbox" name="how" id="friends" value="friends">
+                            <label for="friends">Friends or Family</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group full-width">
+                        <label for="events">Which Events Are You Interested In?</label>
+                        <select name="events" id="events" multiple size="3">
+                            <option value="workshop">Sourdough Workshop</option>
+                            <option value="tasting">Seasonal Tasting Night</option>
+                            <option value="market">Summer Market Pop-Up</option>
+                            <option value="classes">Private Baking Class</option>
+                        </select>
                     </div>
                     <div class="form-group full-width">
-                        <label>Tell us more:</label> 
+                        <label>Questions or Comments?</label> 
                         <textarea name="comments" maxlength="500" placeholder="Share details about your event, collaboration idea, or question."></textarea>
                     </div>
                     <input type="submit" value="Contact Us" style="text-transform: none;">
