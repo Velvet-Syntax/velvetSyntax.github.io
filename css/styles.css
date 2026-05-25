@@ -574,6 +574,7 @@ fieldset {
   margin: 0;
 }
 label, legend {
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -620,9 +621,25 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
 }
 
 /* Community Page Styles */
-.community-hero, .container {
-  background-color: #fffaea;
-  color: #283618;
+.community-hero {
+  background-color: var(--mm-color-primaryDark);
+  color: #FFF7E0;
+  min-height: 450px;
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+}
+.community-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text-container {
+  align-content: center;
+  margin: 0 100px;
+}
+.current-events img{
+  width: 30%;
 }
 .cardEvents-continainer{
   display: flex;
@@ -630,6 +647,10 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
 .card {
   background-color: #E9EDC9;
   color: #283618;
+}
+.card  img {
+  width: 100%;
+  max-height: 240px;
 }
 
 /* Responsive Styles */
