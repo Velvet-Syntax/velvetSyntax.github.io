@@ -621,16 +621,21 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
 }
 
 /* Community Page Styles */
+.community-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .community-hero {
   background-color: var(--mm-color-primaryDark);
   color: #FFF7E0;
-  min-height: 450px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   text-align: left;
 }
 .community-hero img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
 }
@@ -639,18 +644,25 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
   margin: 0 100px;
 }
 .current-events img{
-  width: 30%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.cardEvents-continainer{
+.current-events.container {
+  display: flex;
+  flex-direction:row-reverse;
+}
+.upcoming-events .container {
   display: flex;
 }
 .card {
   background-color: #E9EDC9;
   color: #283618;
 }
-.card  img {
+.card-img-top {
   width: 100%;
-  max-height: 240px;
+  max-height: 230px;
+  object-fit:cover;
 }
 
 /* Responsive Styles */
@@ -677,6 +689,20 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
     grid-template-columns: repeat(2, 1fr); /* Drops to 2 per row on tablets */
   }
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  /* community page */
+  .container-hero-text {
+    margin: 0 auto;
+  }
+  .current-events img {
+    max-width: 100%;
+  }
+  .card-img-top {
+    max-height: 50px;
+  }
+ }
 
 /* Small Screens */
 @media (max-width: 576px) {
@@ -705,8 +731,8 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
   .contact {
     text-align: center;
   }
-    .contact-container {
-      flex-direction: column;
+  .contact-container {
+    flex-direction: column;
   }
     .contact-container address, .contact-container .form-container {
       width: 100%;
@@ -716,6 +742,19 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
   }
     .full-width {
       grid-column: span 1;
+  }
+
+  /* community page */
+  .community-hero img {
+    display: none;
+  }
+  .community-hero .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
   }
 
 }
