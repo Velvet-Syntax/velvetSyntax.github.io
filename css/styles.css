@@ -619,6 +619,9 @@ input[type="text"]:required, input[type="tel"]:required, input[type="email"]:req
 input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
     border-color:green;
 }
+#events {
+  height: 80px;
+}
 
 /* Community Page Styles */
 .community-hero img {
@@ -696,12 +699,7 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
   .container-hero-text {
     margin: 0 auto;
   }
-  .current-events img {
-    max-width: 100%;
-  }
-  .card-img-top {
-    max-height: 50px;
-  }
+
  }
 
 /* Small Screens */
@@ -756,7 +754,15 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
     margin: 0 auto;
     padding: 40px;
   }
-
+  .current-events, .container {
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .txt-container {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 

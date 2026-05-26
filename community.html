@@ -34,9 +34,8 @@
                 </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Off-Canvas Order Form From Nav Bar -->
+    </nav>  
+ <!-- Off-Canvas Order Form From Nav Bar -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLargeOrder"
         aria-labelledby="offcanvasLargeOrderLabel">
         <div class="offcanvas-header">
@@ -49,32 +48,32 @@
             <p class="small text-muted">This form is only for large orders of over a dozen. We're currently not able to accomodate preorders for smaller quantities.</p>
     
             <form>
-                <div class="mb-3">
-                    <label for="fullName" class="form-label">Full name</label>
+                <div class="mb-3 full-width">
+                    <label for="fullName" class="form-label">Full Name</label>
                     <input type="text" class="form-control" id="fullName" name="fullName">
                 </div>
     
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
+                    <label for="email" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="email" name="email">
                 </div>
     
                 <div class="mb-3">
-                    <label for="phone" class="form-label">Phone number</label>
+                    <label for="phone" class="form-label">Phone Number:</label>
                     <input type="tel" class="form-control" id="phone" name="phone">
                 </div>
     
-                <div class="mb-3">
-                    <label for="eventDate" class="form-label">Date needed</label>
+                <div class="mb-3 full-width">
+                    <label for="eventDate" class="form-label">Date Needed:</label>
                     <input type="date" class="form-control" id="eventDate" name="eventDate">
                 </div>
     
-                <div class="mb-3">
-                    <label for="orderCount" class="form-label">Order quantity (Minimum: 12)</label>
+                <div class="mb-3 full-width">
+                    <label for="orderCount" class="form-label">Order Quantity: (Minimum: 12)</label>
                     <input type="number" class="form-control" id="orderCount" name="orderCount" min="12" placeholder="12">
                 </div>
     
-                <div class="mb-3">
+                <div class="mb-3 full-width">
                     <label for="orderType" class="form-label">What are you looking for?</label>
                     <select class="form-select" id="orderType" name="orderType">
                         <option selected disabled>Select one</option>
@@ -87,13 +86,13 @@
                     </select>
                 </div>
     
-                <div class="mb-3">
-                    <label for="details" class="form-label">Order details</label>
+                <div class="mb-3 full-width">
+                    <label for="details" class="form-label">Order Details:</label>
                     <textarea class="form-control" id="details" name="details" rows="4"></textarea>
                 </div>
     
-                <div class="mb-4">
-                    <label for="notes" class="form-label">Allergies, dietary needs, or other notes</label>
+                <div class="mb-4 full-width">
+                    <label for="notes" class="form-label">Allergies, dietary needs, or other notes:</label>
                     <textarea class="form-control" id="notes" name="notes" rows="4"></textarea>
                 </div>
     
@@ -114,25 +113,25 @@
 <!-- Current Events -->
     <section class="current-events container d-flex flex row-reverse my-5">
         <div class="row">
-            <div class="container col-sm-6">
-                <img src="assets/community/chef1.png" alt="Chef Julien Demonchy" class="image-fluid rounded-3">
+            <div class="container col-sm-6 justify-content-center d-flex align-items-center">
+                <img src="assets/community/chef1.png" alt="Chef Julien Demonchy" class="image-fluid rounded-3 d-flex align-items-center justify-content-center">
             </div>
-            <div class="container col text-left m-5">
+            <div class="txt-container row-cols-1 col-sm-6 d-flex flex-column justify-content-center">
                 <h2 class="mb-4">Guest Chef Residency</h2>
                 <h3 class="mb-3">A rotating showcase of local bakers, chefs, and culinary artists.</h3>
                 <p>Each season, we invite a guest baker to take over part of the co-op kitchen and share their craft with the community. From regional techniques to experimental flavors, every residency brings new stories, new perspectives, and limited-time bakes you won’t find anywhere else.</p>
                 <h4 class="mt-4 mb-3">Summer 2026: Chef Julien Demonchy</h4>
                 <p>This summer, we welcome Chef Julien Demonchy from Montréal for a three-month residency exploring neo-Parisian pastry, modern viennoiserie, and intricate laminated doughs inspired by French tradition and contemporary technique.</p>
             </div>
+            <hr class="green-divider mt-3">
         </div>
-        <hr class="green-divider mt-3">
     </section>
 <!-- Upcoming Events -->
     <section class="upcoming-events container text-center">
         <h2>Upcoming Events</h2>
         <h4 class="my-3">Workshops, pop-ups, and gatherings for the baking community.</h4>
         <p class="mb-5">Join us for our upcoming events and be a part of the Michi Michi community! From baking workshops to charity fundraisers, there's always something exciting happening at our bakery. Check out the details below and mark your calendars!</p>
-        <div class="row row-cols-1 row-cols-lg-2 g-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
             <div class="card">
             <img src="assets/community/community-event-card1.jpg" class="card-img-top" alt="June 14 Sourdough Workshop">
@@ -177,7 +176,7 @@
         <hr class="green-divider mt-3">
     </section>
 <!-- Previous Events -->
-    <section class="previous-events container text-center my-5">
+    <section class="previous-events container text-center my-5 p-4">
         <h2 class="mb-4">Previous Gatherings</h2>
         <div class="card-pervious-events row row-cols-1 row-cols-md-3 g-4">
         <div class="card">
@@ -204,8 +203,9 @@
         </div>
         <hr class="green-divider mt-3">
         </section>
+<!-- get involved cta -->
         <section>
-        <div class="container text-center mb-5">
+        <div class="collab-container text-center mb-5 p-4">
             <h2>Get Involved</h2>
             <p>Interested in collaborating, volunteering, or hosting an event at Michi Michi? We’re always looking for passionate community members to join us in creating a vibrant space for connection and creativity. Reach out to learn more about partnership opportunities, volunteer programs, and how you can be a part of our community!</p>
             <a href="visit.html" class="btn btn-bright">Contact Us</a>

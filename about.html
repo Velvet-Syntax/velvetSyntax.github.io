@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <!-- Off-Canvas Order Form From Nav Bar -->
+ <!-- Off-Canvas Order Form From Nav Bar -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLargeOrder"
         aria-labelledby="offcanvasLargeOrderLabel">
         <div class="offcanvas-header">
@@ -51,32 +51,32 @@
             <p class="small text-muted">This form is only for large orders of over a dozen. We're currently not able to accomodate preorders for smaller quantities.</p>
     
             <form>
-                <div class="mb-3">
-                    <label for="fullName" class="form-label">Full name</label>
+                <div class="mb-3 full-width">
+                    <label for="fullName" class="form-label">Full Name</label>
                     <input type="text" class="form-control" id="fullName" name="fullName">
                 </div>
     
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
+                    <label for="email" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="email" name="email">
                 </div>
     
                 <div class="mb-3">
-                    <label for="phone" class="form-label">Phone number</label>
+                    <label for="phone" class="form-label">Phone Number:</label>
                     <input type="tel" class="form-control" id="phone" name="phone">
                 </div>
     
-                <div class="mb-3">
-                    <label for="eventDate" class="form-label">Date needed</label>
+                <div class="mb-3 full-width">
+                    <label for="eventDate" class="form-label">Date Needed:</label>
                     <input type="date" class="form-control" id="eventDate" name="eventDate">
                 </div>
     
-                <div class="mb-3">
-                    <label for="orderCount" class="form-label">Order quantity (Minimum: 12)</label>
+                <div class="mb-3 full-width">
+                    <label for="orderCount" class="form-label">Order Quantity: (Minimum: 12)</label>
                     <input type="number" class="form-control" id="orderCount" name="orderCount" min="12" placeholder="12">
                 </div>
     
-                <div class="mb-3">
+                <div class="mb-3 full-width">
                     <label for="orderType" class="form-label">What are you looking for?</label>
                     <select class="form-select" id="orderType" name="orderType">
                         <option selected disabled>Select one</option>
@@ -89,13 +89,13 @@
                     </select>
                 </div>
     
-                <div class="mb-3">
-                    <label for="details" class="form-label">Order details</label>
+                <div class="mb-3 full-width">
+                    <label for="details" class="form-label">Order Details:</label>
                     <textarea class="form-control" id="details" name="details" rows="4"></textarea>
                 </div>
     
-                <div class="mb-4">
-                    <label for="notes" class="form-label">Allergies, dietary needs, or other notes</label>
+                <div class="mb-4 full-width">
+                    <label for="notes" class="form-label">Allergies, dietary needs, or other notes:</label>
                     <textarea class="form-control" id="notes" name="notes" rows="4"></textarea>
                 </div>
     
@@ -107,14 +107,17 @@
 <!-- Hero Section -->
 <section class="hero">
   <img src="assets/team/hero img.jpg" alt="Company Hero Image" class="hero-img">
-  <h2>Our Story</h2>
-   <p>Michi Michi was created as a space for connection through food—where ideas, cultures, and people come together at the table. What began as a simple vision has grown into a platform for chefs to create, collaborate, and share their stories. By welcoming resident chefs from different backgrounds, Michi Michi offers an ever-evolving dining experience shaped by diverse perspectives and traditions. Each residency brings something new, inviting guests to explore flavors, techniques, and narratives from around the world.</p>
-  <h2>Our Mission</h2><p>Our mission is to foster creativity and cultural exchange through food. We aim to support chefs by providing a space to experiment, collaborate, and showcase their craft while building meaningful connections with the community. Through thoughtful dining experiences, we strive to celebrate diversity, spark curiosity, and create moments that bring people together.</p>
+    <div class="hero-text mx-5">
+        <h2>Our Story</h2>
+        <p>Michi Michi was created as a space for connection through food—where ideas, cultures, and people come together at the table. What began as a simple vision has grown into a platform for chefs to create, collaborate, and share their stories. By welcoming resident chefs from different backgrounds, Michi Michi offers an ever-evolving dining experience shaped by diverse perspectives and traditions. Each residency brings something new, inviting guests to explore flavors, techniques, and narratives from around the world.</p>
+        <h2>Our Mission</h2>
+        <p>Our mission is to foster creativity and cultural exchange through food. We aim to support chefs by providing a space to experiment, collaborate, and showcase their craft while building meaningful connections with the community. Through thoughtful dining experiences, we strive to celebrate diversity, spark curiosity, and create moments that bring people together.</p>
+    </div class="hero-text">
 </section>
 <!-- Team Section -->
-<section class="team">
+<section class="team ">
   <h2>Meet the Team</h2>
-  <div class="team-grid">
+  <div class="team-grid mx-5">
     <a href="#alex-modal" class="member">
     <img src="assets/team/team1.jpg" alt="alex">
     <p>Alex</p>
