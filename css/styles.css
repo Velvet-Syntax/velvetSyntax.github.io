@@ -450,7 +450,7 @@ footer .nav-link, footer a {
 }
 .hero {
   text-align: center; 
-  background-color:#606C38;
+  background-color:var(--mm-color-primaryDark);
   color: white;
   padding-bottom: 20px;
 }
