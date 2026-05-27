@@ -10,11 +10,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- navigation -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-lg">
             <a class="navbar-brand" href="index.html">
@@ -121,28 +123,28 @@
                 <p><em>Note: Fields highlighted in red are required.</em></p>
                 <form action="" method="post" name="contact">
                     <div class="form-group">
-                        <label>First Name:</label>
+                        <label for="first-name">First Name:</label>
                         <input type="text" name="fname" maxlength="30" required placeholder="First Name">
                     </div>
                     <div class="form-group">
-                        <label>Last Name:</label>
+                        <label for="last-name">Last Name:</label>
                         <input type="text" name="lname" maxlength="30" required placeholder="Last Name">
                     </div>
                     <div class="form-group">
-                        <label>Organization (if any):</label>
+                        <label for="organization">Organization (if any):</label>
                         <input type="text" name="organization" maxlength="30" placeholder="Optional">
                     </div>
                     <div class="form-group">
-                        <label>Phone Number:</label>
-                        <input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[-]\d{3}[-]\d{4}" required title="Ex: 555-555-5555" placeholder="555-555-5555">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" required placeholder="555-555-5555" pattern="[0-9]{3}-[0-9] {3}-[0-9]{4}" title="Format: 555-555-5555">
                     </div>
                     <div class="form-group full-width">
-                        <label>Email Address:</label>
+                        <label for="email">Email Address:</label>
                         <input type="email" name="email" maxlength="30" autocomplete="email" required placeholder="example@domain.com">
                     </div>
                     <div class="form-group full-width">
-                        <label for="count">Inquiry Type</label>
-                        <select name="count" id="count">
+                        <label for="inquiry">Inquiry Type</label>
+                        <select name="inquiry" id="inquiry" required>
                             <option value="inquiry">Select an inquiry type</option>
                             <option value="general">General Inquiry</option>
                             <option value="catering">Catering Request</option>
@@ -200,7 +202,7 @@
         </div>
     </section>
     
-<!-- Footer Updated 05/18/26 -->
+<!-- Footer Updated 05/24/26 -->
     <footer class="container-fluid">
         <div class="container-lg py-3 my-4 text-start">
             <div class="row align-items-start">
