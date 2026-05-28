@@ -144,7 +144,6 @@ nav {
 
 /* Footer Styles */
 footer {
-  position: relative;
   background-color: var(--mm-color-primaryDark);
   color: var(--mm-color-baseCream);
   padding: 1.5rem 0;
@@ -160,13 +159,6 @@ footer .nav-link, footer a {
   color: var(--mm-color-baseCream);
 }
 
-.container-copyright {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 1rem;
-  width: auto;
-  text-align: right;
-}
 
 /* Button Styles */
 .btn {
@@ -390,7 +382,7 @@ footer .nav-link, footer a {
   gap: 0.5rem;
 }
 .newsletter-signup .newsletter-field {
-  min-width: 350px;
+  min-width: 150px;
   max-width: 620px;
 }
 .newsletter-signup .newsletter-input {
@@ -722,20 +714,42 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
 
 /* Small Screens */
 @media (max-width: 576px) {
+  /* home page */
  .home-hero-text {
   margin-bottom: 120px;
  }
 
  #home-merch-shape {
   display: none;
-  }
+ }
 
   #home-cutout-man-sitting {
   display: none;
-  }
+ }
   /* about page */
  .team-grid {
     grid-template-columns: 1fr; /* Drops to 1 per row on mobile phones */
+  }
+
+  /* Newsletter Field */
+  .newsletter-signup {
+    height: auto;
+    min-height: 350px;
+    padding: 1rem !important;
+  }
+  .newsletter-signup .newsletter-form {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .newsletter-signup .newsletter-field {
+    width: 100%;
+    max-width: 100%;
+  }
+  .newsletter-signup .newsletter-submit {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 0;
   }
 
   /* visit page */
@@ -781,9 +795,7 @@ input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
     text-align: center;
     margin: 0 auto;
   }
-
 }
-
 
 /* Custom One-offs */
 @media (max-width: 814px) {
